@@ -13,14 +13,8 @@ mano_dominante=gets.chomp
 #else
  #   puts"Eres menor de edad"
 # end
-if edad >=18 && mano_dominante =="zurdo"
+if edad >18 && mano_dominante =="zurdo"
     puts "Eres mayor de edad y zurdo"
-elsif edad >=18 && mano_dominante =="diestro"
+else edad >18 && mano_dominante =="diestro"
     puts"Eres mayor de edad y diestro"
- elsif edad >18 && mano_dominante =="zurdo"
-    puts"Eres menor de edad y zurdo"
- elsif edad >18 && mano_dominante =="diestro"
-    puts"Eres menor de edad y diestro"
- else
-    puts "Opcion captura no valida"
 end
