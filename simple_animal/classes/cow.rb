@@ -1,6 +1,11 @@
-class Cow
-    attr_accessor :noise
+class Cow < Animal
+
     def initialize
         @noise="muuuu"
+    end
+
+    private
+    def eat_grass
+    puts "Comiendo pasto"
     end
 end

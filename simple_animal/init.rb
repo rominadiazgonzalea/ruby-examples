@@ -1,8 +1,10 @@
+require_relative 'classes/animal'
 require_relative 'classes/cat'
 require_relative 'classes/cow'
 require_relative 'classes/dog'
 require_relative 'classes/duck'
 
+blaster=Animal.new
 objeto_gato = Cat.new
 objeto_vaca = Cow.new
 objeto_perro = Dog.new
