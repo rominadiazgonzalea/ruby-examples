@@ -1,9 +1,11 @@
-print "Ingresa password para ver los intento a generar: "
-contraena= gets.chomp
-texto="a" 
-intento=1
-while texto != contraena
+password = ARGV[0]
+texto = "a" 
+intentos = 0
+
+while password != texto
+    puts ","
     texto = texto.next
-    intento+=1
+    puts texto
+    intentos += 1
 end
-puts intento
+puts "#{intento} 
