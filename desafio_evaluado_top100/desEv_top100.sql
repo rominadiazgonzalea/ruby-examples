@@ -10,17 +10,23 @@ SELECT * FROM reparto WHERE ID=2
 SELECT count (id) FROM reparto WHERE actor='Harrison Ford'
 
 --pregunta 6:  
-SELECT * FROM public.peliculas;
-where "ano_estreno" between 1990 and 1999
+
+SELECT pelicula FROM public.peliculas 
+where ano_estreno between 1990 and 1999
+ORDER BY  id ASC; 
 
 
 --pregunta 7: 
-SELECT LENGTH   “longitud_titulo” AS longitud_titulo FROM peliculas;
+
+SELECT pelicula,LENGTH(pelicula)
+AS longitud_titulo
+FROM
+public.peliculas;
 
 --pregunta 8:
 
-SELECT LENGTH (titulo)
-AS longitud_titulo 
-FROM pelicula LIMIT 10;
+select max(length(pelicula))
+   AS longitud_titulo
+from public.peliculas;
 
 
