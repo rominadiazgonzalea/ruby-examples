@@ -1,4 +1,4 @@
-class Montlyappointment < Appointment
+class MontlyAppointment < Appointment
     attr_reader :day
 
     def initialize(location, purpose, hour, min,day)

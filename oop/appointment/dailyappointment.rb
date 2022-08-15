@@ -1,4 +1,4 @@
-class Dailyappointment < Appointment
+class DailyAppointment < Appointment
 
 def occurs_on?(hour,min)
     hour == @hour && min == @min
